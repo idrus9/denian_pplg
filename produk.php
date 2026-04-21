@@ -203,7 +203,7 @@ function editData(id,nama,harga,stok,foto){
     document.getElementById('nama').value = nama;
     document.getElementById('harga').value = harga;
     document.getElementById('stok').value = stok;
-    document.getElementById('foto').value = foto;
+    
 
     var myModal = new bootstrap.Modal(document.getElementById('editModal'));
     myModal.show();
