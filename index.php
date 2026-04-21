@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "config.php";
 
 // Cek jika user sudah login, arahkan ke dashboard
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true){
@@ -18,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($username === "admin" && $password === "12345") {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header("location: index.php");
+        header("location: login.php");
     } else {
         $error = "Username atau password salah!";
     }

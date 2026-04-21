@@ -1,5 +1,5 @@
 <?php
-include "koneksi.php";
+include "config.php";
 
 $id = $_GET['id'];
 $data = mysqli_query($conn, "SELECT * FROM transaksi WHERE id='$id'");
